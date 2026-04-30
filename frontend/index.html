@@ -3,67 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabor Valle | Comida Tipica Colombiana en Cali</title>
+    <title>Sabor Valle | Proyecto Web de Portafolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
         body {
-            font-family: "Segoe UI", system-ui, sans-serif;
+            font-family: Georgia, "Times New Roman", serif;
         }
 
         .hero {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://www.greenpeace.org/static/planet4-colombia-stateless/2024/10/036740c8-freddy-jim-h9tv4-pukx0-unsplash-scaled.jpg");
+            background-image: linear-gradient(rgba(18, 18, 18, 0.62), rgba(18, 18, 18, 0.62)), url("https://www.greenpeace.org/static/planet4-colombia-stateless/2024/10/036740c8-freddy-jim-h9tv4-pukx0-unsplash-scaled.jpg");
             background-size: cover;
             background-position: center;
         }
+
+        .paper-grid {
+            background-image:
+                linear-gradient(rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(15, 23, 42, 0.035) 1px, transparent 1px);
+            background-size: 22px 22px;
+        }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-    <nav class="sticky top-0 z-50 bg-white shadow-md">
+<body class="paper-grid bg-stone-50 text-stone-800">
+    <nav class="sticky top-0 z-50 border-b border-stone-200 bg-white/90 backdrop-blur">
         <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
             <div class="flex items-center gap-3">
-                <i class="fa-solid fa-utensils text-3xl text-green-600"></i>
-                <h1 class="text-2xl font-bold text-green-700">Sabor Valle</h1>
+                <i class="fa-solid fa-utensils text-3xl text-green-700"></i>
+                <h1 class="text-2xl font-bold text-green-800">Sabor Valle</h1>
             </div>
             <div class="hidden gap-8 text-lg md:flex">
-                <a href="#" class="hover:text-green-600">Inicio</a>
-                <a href="#menu" class="hover:text-green-600">Menu</a>
-                <a href="#reservas" class="hover:text-green-600">Reservas</a>
-                <a href="#contacto" class="hover:text-green-600">Contacto</a>
+                <a href="#" class="hover:text-green-700">Inicio</a>
+                <a href="#proyecto" class="hover:text-green-700">Proyecto</a>
+                <a href="#menu" class="hover:text-green-700">Menu</a>
+                <a href="#tecnologias" class="hover:text-green-700">Tecnologias</a>
+                <a href="#reservas" class="hover:text-green-700">Reservas</a>
+                <a href="#contacto" class="hover:text-green-700">Contacto</a>
             </div>
-            <a href="https://wa.me/573145766589" target="_blank" class="flex items-center gap-2 rounded-full bg-green-600 px-6 py-2 text-white hover:bg-green-700">
+            <a href="https://wa.me/573145766589" target="_blank" class="flex items-center gap-2 rounded-full bg-green-700 px-6 py-2 text-white transition hover:bg-green-800">
                 <i class="fa-solid fa-whatsapp"></i> WhatsApp
             </a>
         </div>
     </nav>
 
-    <section class="hero flex h-screen items-center text-white">
-        <div class="mx-auto max-w-4xl px-6 text-center">
-            <h1 class="mb-6 text-6xl font-bold md:text-7xl">Bienvenidos a Sabor Valle</h1>
-            <p class="mb-10 text-3xl">El mejor ajiaco, empanadas y sabor del Valle del Cauca en Cali</p>
+    <section class="hero flex min-h-screen items-center text-white">
+        <div class="mx-auto max-w-5xl px-6 text-center">
+            <p class="mb-5 inline-block rounded-full border border-white/30 bg-white/10 px-5 py-2 text-sm font-bold uppercase tracking-[0.3em]">
+                Proyecto de portafolio
+            </p>
+            <h1 class="mb-6 text-6xl font-bold md:text-7xl">Sabor Valle</h1>
+            <p class="mx-auto mb-4 max-w-4xl text-2xl font-semibold md:text-3xl">
+                Landing page conceptual para un restaurante colombiano con menu visual, categorias y sistema de reservas.
+            </p>
+            <p class="mx-auto mb-10 max-w-3xl text-lg leading-8 text-stone-100 md:text-xl">
+                Pensada para demostrar proceso de diseño, integracion frontend-backend, despliegue y trabajo iterativo con ayuda de IA.
+            </p>
             <div class="flex flex-col justify-center gap-6 sm:flex-row">
-                <a href="#reservas" class="rounded-3xl bg-yellow-400 px-10 py-6 text-2xl font-bold text-black transition hover:scale-105">Reservar mesa ahora</a>
-                <a href="#menu" class="rounded-3xl border-2 border-white px-10 py-6 text-2xl font-bold transition hover:bg-white hover:text-black">Ver nuestro menu</a>
+                <a href="#proyecto" class="rounded-3xl bg-amber-300 px-10 py-5 text-xl font-bold text-stone-900 transition hover:scale-105">
+                    Explorar proyecto
+                </a>
+                <a href="#menu" class="rounded-3xl border-2 border-white px-10 py-5 text-xl font-bold transition hover:bg-white hover:text-stone-900">
+                    Ver demo del menu
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyecto" class="py-20">
+        <div class="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[1.2fr_0.8fr]">
+            <div class="rounded-[2rem] bg-white p-10 shadow-xl shadow-stone-200/70">
+                <p class="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-green-700">Sobre el proyecto</p>
+                <h2 class="mb-5 text-5xl font-bold text-stone-900">Una pieza de portafolio pensada para mostrar criterio tecnico y visual</h2>
+                <p class="mb-4 text-lg leading-8 text-stone-700">
+                    Sabor Valle es una pagina conceptual inspirada en la gastronomia del Valle del Cauca. Nacio como una idea sencilla
+                    y fue creciendo hasta convertirse en una demo completa con secciones visuales, categorias de menu, reservas y despliegue online.
+                </p>
+                <p class="text-lg leading-8 text-stone-700">
+                    El objetivo no fue solo construir una pagina bonita, sino tambien demostrar capacidad para corregir errores,
+                    estructurar un proyecto, integrar un backend funcional y tomar decisiones de producto usando IA como apoyo de desarrollo.
+                </p>
+            </div>
+            <div class="grid gap-6">
+                <div class="rounded-[2rem] bg-green-700 p-8 text-white shadow-xl shadow-green-900/20">
+                    <p class="mb-2 text-sm font-bold uppercase tracking-[0.25em] text-green-100">Objetivo</p>
+                    <p class="text-2xl font-bold leading-10">Diseñar una experiencia web atractiva que muestre frontend, backend y despliegue en un solo proyecto.</p>
+                </div>
+                <div class="rounded-[2rem] bg-stone-900 p-8 text-stone-100 shadow-xl shadow-stone-400/20">
+                    <p class="mb-2 text-sm font-bold uppercase tracking-[0.25em] text-stone-300">Enfoque</p>
+                    <p class="text-xl leading-9">Mostrar proceso real: iteracion visual, integracion de rutas, contenido personalizado y mejoras guiadas por objetivos.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="menu" class="bg-white py-20">
         <div class="mx-auto max-w-7xl px-6">
-            <h2 class="mb-12 text-center text-5xl font-bold">Nuestro Menu</h2>
+            <div class="mb-12 text-center">
+                <p class="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-green-700">Demo visual</p>
+                <h2 class="text-5xl font-bold">Menu conceptual del proyecto</h2>
+            </div>
+
             <div class="mb-14 overflow-hidden rounded-[2rem] bg-gradient-to-r from-amber-100 via-yellow-50 to-green-100 shadow-2xl">
                 <div class="grid items-center gap-8 md:grid-cols-2">
                     <div class="p-8 md:p-12">
                         <p class="mb-4 inline-block rounded-full bg-green-700 px-4 py-2 text-sm font-bold uppercase tracking-[0.2em] text-white">Especial de la casa</p>
-                        <h3 class="mb-4 text-4xl font-black text-gray-900 md:text-5xl">Almuerzo del dia</h3>
-                        <p class="mb-6 text-lg leading-8 text-gray-700">
+                        <h3 class="mb-4 text-4xl font-black text-stone-900 md:text-5xl">Almuerzo del dia</h3>
+                        <p class="mb-6 text-lg leading-8 text-stone-700">
                             Sancocho de gallina con base de frijoles, seco conformado con arroz, pollo sudado,
                             ensalada, patacon y de acompanamiento un rico y refrescante jugo de lulo natural.
                         </p>
                         <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
                             <p class="text-4xl font-black text-green-700">$20.000</p>
-                            <a href="#reservas" class="inline-block rounded-2xl bg-gray-900 px-6 py-4 text-center text-lg font-bold text-white transition hover:bg-green-700">
-                                Reservarlo ahora
+                            <a href="#reservas" class="inline-block rounded-2xl bg-stone-900 px-6 py-4 text-center text-lg font-bold text-white transition hover:bg-green-700">
+                                Probar flujo de reserva
                             </a>
                         </div>
                     </div>
@@ -72,6 +124,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="grid gap-10 md:grid-cols-3">
                 <div class="overflow-hidden rounded-3xl bg-gray-50 shadow-xl">
                     <img src="https://www.recetasnestle.com.co/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/f78cf6630b31638994b09b3b470b085c.webp?itok=jCj648zw" alt="Ajiaco" class="h-64 w-full object-cover">
@@ -91,7 +144,7 @@
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV98GKS6826GOYQzo_5czbVPVYnVD4AWs3kA&s" alt="Chuleta Valluna" class="h-64 w-full object-cover">
                     <div class="p-8">
                         <h3 class="mb-2 text-3xl font-semibold">Autentica Chuleta Valluna</h3>
-                        <p class="mb-2 text-lg text-gray-700">Ideal para 3 personas</p>
+                        <p class="mb-2 text-lg text-stone-700">Ideal para 3 personas</p>
                         <p class="mb-6 text-xl">$40.000</p>
                     </div>
                 </div>
@@ -103,17 +156,17 @@
                     <div class="mx-auto w-full max-w-sm overflow-hidden rounded-3xl bg-gray-50 shadow-xl">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBLrU88oDnxGz4yftBHtA6YCc1dXRLRbYk3Q&s" alt="Jugo de lulo" class="h-64 w-full object-cover">
                         <div class="p-8 text-center">
-                            <h4 class="mb-3 text-3xl font-semibold">Jugo De lulo</h4>
-                            <p class="text-lg text-gray-700">En agua $7000</p>
-                            <p class="mt-2 text-lg text-gray-700">En leche $8500</p>
+                            <h4 class="mb-3 text-3xl font-semibold">Jugo de lulo</h4>
+                            <p class="text-lg text-stone-700">En agua $7000</p>
+                            <p class="mt-2 text-lg text-stone-700">En leche $8500</p>
                         </div>
                     </div>
                     <div class="mx-auto w-full max-w-sm overflow-hidden rounded-3xl bg-gray-50 shadow-xl">
                         <img src="https://img.freepik.com/fotos-premium/jugo-mora-vaso-hielo-frutas-mesa-madera_92534-1144.jpg" alt="Jugo de mora" class="h-64 w-full object-cover">
                         <div class="p-8 text-center">
-                            <h4 class="mb-3 text-3xl font-semibold">Jugo de Mora</h4>
-                            <p class="text-lg text-gray-700">En agua $7000</p>
-                            <p class="mt-2 text-lg text-gray-700">En leche $8500</p>
+                            <h4 class="mb-3 text-3xl font-semibold">Jugo de mora</h4>
+                            <p class="text-lg text-stone-700">En agua $7000</p>
+                            <p class="mt-2 text-lg text-stone-700">En leche $8500</p>
                         </div>
                     </div>
                 </div>
@@ -126,7 +179,7 @@
                         <img src="https://i.ytimg.com/vi/8kyMcD-ekOg/maxresdefault.jpg" alt="Cholado" class="h-64 w-full object-cover">
                         <div class="p-8 text-center">
                             <h4 class="mb-3 text-3xl font-semibold">Cholado Vallecaucano</h4>
-                            <p class="text-lg text-gray-700">Una mezcla refrescante de frutas, hielo raspado y mucho sabor caleño.</p>
+                            <p class="text-lg text-stone-700">Una mezcla refrescante de frutas, hielo raspado y mucho sabor caleno.</p>
                             <p class="mt-4 text-2xl font-bold text-rose-700">$12.000</p>
                         </div>
                     </div>
@@ -134,7 +187,7 @@
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRg-lzh6JqN-hxgd84U9wukWBqHOY6Qo3HOg&s" alt="Fresas con crema" class="h-64 w-full object-cover">
                         <div class="p-8 text-center">
                             <h4 class="mb-3 text-3xl font-semibold">Fresas con crema</h4>
-                            <p class="text-lg text-gray-700">Un postre suave, fresco y dulce para cerrar con el mejor sabor.</p>
+                            <p class="text-lg text-stone-700">Un postre suave, fresco y dulce para cerrar con el mejor sabor.</p>
                             <p class="mt-4 text-2xl font-bold text-rose-700">$8.000</p>
                         </div>
                     </div>
@@ -143,9 +196,71 @@
         </div>
     </section>
 
+    <section id="tecnologias" class="py-20">
+        <div class="mx-auto max-w-7xl px-6">
+            <div class="mb-12 text-center">
+                <p class="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-green-700">Stack del proyecto</p>
+                <h2 class="text-5xl font-bold text-stone-900">Tecnologias y habilidades demostradas</h2>
+            </div>
+            <div class="grid gap-8 md:grid-cols-3">
+                <div class="rounded-[2rem] bg-white p-8 shadow-xl shadow-stone-200/60">
+                    <i class="fa-solid fa-code mb-5 text-4xl text-green-700"></i>
+                    <h3 class="mb-3 text-3xl font-bold">Frontend</h3>
+                    <p class="text-lg leading-8 text-stone-700">HTML estructurado, Tailwind CSS para maquetacion visual y JavaScript para interaccion del formulario.</p>
+                </div>
+                <div class="rounded-[2rem] bg-white p-8 shadow-xl shadow-stone-200/60">
+                    <i class="fa-solid fa-server mb-5 text-4xl text-green-700"></i>
+                    <h3 class="mb-3 text-3xl font-bold">Backend</h3>
+                    <p class="text-lg leading-8 text-stone-700">Python con FastAPI para recibir reservas, servir el frontend y mantener una estructura funcional de servidor.</p>
+                </div>
+                <div class="rounded-[2rem] bg-white p-8 shadow-xl shadow-stone-200/60">
+                    <i class="fa-solid fa-rocket mb-5 text-4xl text-green-700"></i>
+                    <h3 class="mb-3 text-3xl font-bold">Deploy</h3>
+                    <p class="text-lg leading-8 text-stone-700">Proyecto preparado para GitHub y Render, demostrando publicacion, estructura limpia y despliegue de una demo real.</p>
+                </div>
+            </div>
+            <div class="mt-10 grid gap-6 md:grid-cols-4">
+                <div class="rounded-2xl border border-stone-200 bg-stone-50 px-6 py-5 text-center text-lg font-semibold text-stone-700">HTML</div>
+                <div class="rounded-2xl border border-stone-200 bg-stone-50 px-6 py-5 text-center text-lg font-semibold text-stone-700">Tailwind CSS</div>
+                <div class="rounded-2xl border border-stone-200 bg-stone-50 px-6 py-5 text-center text-lg font-semibold text-stone-700">JavaScript</div>
+                <div class="rounded-2xl border border-stone-200 bg-stone-50 px-6 py-5 text-center text-lg font-semibold text-stone-700">Python + FastAPI</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-stone-900 py-20 text-white">
+        <div class="mx-auto max-w-7xl px-6">
+            <div class="mb-12 text-center">
+                <p class="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-amber-300">Lo que demuestra</p>
+                <h2 class="text-5xl font-bold">Funcionalidades clave del proyecto</h2>
+            </div>
+            <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+                <div class="rounded-[2rem] border border-white/10 bg-white/5 p-8">
+                    <h3 class="mb-3 text-2xl font-bold">Menu por categorias</h3>
+                    <p class="text-lg leading-8 text-stone-300">Distribucion clara de platos, bebidas y postres con tarjetas visuales y jerarquia de contenido.</p>
+                </div>
+                <div class="rounded-[2rem] border border-white/10 bg-white/5 p-8">
+                    <h3 class="mb-3 text-2xl font-bold">Formulario funcional</h3>
+                    <p class="text-lg leading-8 text-stone-300">Envio de reservas desde el frontend hacia el backend con confirmacion y persistencia basica.</p>
+                </div>
+                <div class="rounded-[2rem] border border-white/10 bg-white/5 p-8">
+                    <h3 class="mb-3 text-2xl font-bold">Iteracion con IA</h3>
+                    <p class="text-lg leading-8 text-stone-300">Uso de IA para proponer cambios, corregir errores y acelerar el desarrollo sin perder control del proyecto.</p>
+                </div>
+                <div class="rounded-[2rem] border border-white/10 bg-white/5 p-8">
+                    <h3 class="mb-3 text-2xl font-bold">Presentacion online</h3>
+                    <p class="text-lg leading-8 text-stone-300">Proyecto listo para mostrarse como demo publica dentro de un portafolio de desarrollo web.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="reservas" class="bg-green-50 py-20">
         <div class="mx-auto max-w-2xl px-6">
-            <h2 class="mb-12 text-center text-5xl font-bold">Haz tu reserva</h2>
+            <h2 class="mb-4 text-center text-5xl font-bold">Prueba del flujo de reservas</h2>
+            <p class="mb-12 text-center text-lg leading-8 text-stone-700">
+                Esta seccion existe para demostrar integracion entre interfaz y backend, no como sistema comercial final.
+            </p>
 
             <form id="reservaForm" class="space-y-8 rounded-3xl bg-white p-10 shadow-2xl">
                 <div>
@@ -167,25 +282,43 @@
                     <input id="personas" type="number" min="1" value="2" class="w-full rounded-2xl border border-gray-300 px-6 py-5 text-xl" required>
                 </div>
 
-                <button type="submit" class="w-full rounded-3xl bg-green-600 py-7 text-2xl font-bold text-white hover:bg-green-700">
+                <button type="submit" class="w-full rounded-3xl bg-green-700 py-7 text-2xl font-bold text-white transition hover:bg-green-800">
                     Confirmar reserva
                 </button>
             </form>
 
             <div id="successMessage" class="mt-8 hidden rounded-3xl border border-green-500 bg-green-100 p-6 text-center text-xl font-semibold text-green-700">
-                Reserva confirmada. Te enviaremos los detalles por WhatsApp.
+                Reserva confirmada. La integracion con el backend respondio correctamente.
             </div>
         </div>
     </section>
 
-    <footer id="contacto" class="bg-gray-900 py-16 text-white">
-        <div class="mx-auto max-w-7xl px-6 text-center">
-            <p class="mb-6 text-2xl">Calle 5 # 20-10, Cali, Valle del Cauca</p>
-            <div class="mb-8 flex justify-center gap-8 text-3xl">
-                <a href="https://instagram.com" class="hover:text-yellow-400"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://facebook.com" class="hover:text-yellow-400"><i class="fa-brands fa-facebook"></i></a>
+    <section class="py-20">
+        <div class="mx-auto max-w-7xl px-6">
+            <div class="rounded-[2rem] bg-gradient-to-r from-green-700 to-emerald-500 p-10 text-white shadow-2xl shadow-green-900/20 md:p-14">
+                <p class="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-green-100">Cierre de portafolio</p>
+                <h2 class="mb-4 text-5xl font-bold">Proyecto conceptual desarrollado para enseñar proceso real de construccion web</h2>
+                <p class="max-w-4xl text-lg leading-8 text-green-50">
+                    Esta demo combina identidad visual, organizacion de contenido, integracion tecnica y despliegue.
+                    Es una pieza pensada para mostrarse en clase, en entrevistas o dentro de un portafolio personal.
+                </p>
+                <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+                    <a href="#tecnologias" class="rounded-2xl border border-white/40 px-7 py-4 text-center text-lg font-bold text-white transition hover:bg-white/10">
+                        Revisar stack
+                    </a>
+                </div>
             </div>
-            <p class="text-xl">(c) 2026 Sabor Valle - Hecho con amor e IA en Cali</p>
+        </div>
+    </section>
+
+    <footer id="contacto" class="bg-stone-900 py-16 text-white">
+        <div class="mx-auto max-w-7xl px-6 text-center">
+            <p class="mb-6 text-2xl">Proyecto de demostracion inspirado en la comida tipica del Valle del Cauca</p>
+            <div class="mb-8 flex justify-center gap-8 text-3xl">
+                <a href="https://github.com/JimenezCreator22/Cali-Sabor-Valle" target="_blank" class="hover:text-amber-300"><i class="fa-brands fa-github"></i></a>
+                <a href="https://instagram.com" target="_blank" class="hover:text-amber-300"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p class="text-xl">(c) 2026 Sabor Valle - Proyecto web de portafolio hecho con apoyo de IA</p>
         </div>
     </footer>
 
